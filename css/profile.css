@@ -1,0 +1,106 @@
+        body, input, button, label, a {
+            font-family: sans-serif;
+        }
+
+        /* Ensuring text readability over your custom glass-card background styling */
+        .glass-card h2, .glass-card h3, .glass-card h4 { 
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Gold divider lines used to split form sections */
+        .section-title {
+            color: #d4af37; 
+            font-size: 16px; 
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+            padding-bottom: 4px; 
+            margin-top: 38px;
+            margin-bottom: 15px;
+        }
+
+        /* Muted description text underneath main headers */
+        .subtitle { 
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px; 
+            margin-bottom: 20px;
+        }
+
+        /* Main background container card with a frosted glass effect */
+        .glass-card {
+            background-color: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Default style for form input boxes */
+        html body .glass-card .form-control {
+            background-color: rgba(255, 255, 255, 0.1); 
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff; 
+            border-radius: 8px;
+        }
+
+        /* Style changes when a user clicks inside an input box */
+        html body .glass-card .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.15); 
+            border-color: #d4af37; 
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.5); 
+            color: #ffffff;
+        }
+
+        /* Primary Gold Button Style */
+        .custom-login-btn {
+            background-color: #d4af37;
+            color: #111111; 
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            transition: 0.2s; 
+        }
+
+        /* Button animation when cursor rests over it */
+        .custom-login-btn:hover {
+            background-color: #f3d368; 
+            color: #111111;
+        }
+
+        /* Dark wrapper box holding the profile image */
+        .image-preview-box {
+            background: rgba(10, 24, 47, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            position: relative; 
+        }
+
+        /* Standardizing the size of the uploaded profile photo */
+        .image-preview-box img {
+            width: 100%;
+            height: 200px;         
+            object-fit: cover;      
+            border-radius: 8px;
+        }
+
+        /* Round "X" button used to remove an image */
+        .remove-img-btn {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: none;
+            border-radius: 50%; 
+            width: 28px;
+            height: 28px;
+            line-height: 24px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Remove button highlight response */
+        .remove-img-btn:hover { 
+            background: rgba(212, 175, 55, 0.8); 
+        }

@@ -1,0 +1,25 @@
+/* 
+================================================================================
+  TYPOGRAPHY & STRUCTURAL GRID RULES
+  
+  WHAT THIS BLOCK DOES:
+  1. It downloads luxury, professional fonts from Google's free font servers.
+  2. It creates an exact mathematical spacing margin to push layout elements 
+     away from the right side of the screen so things don't look crowded.
+================================================================================
+*/
+
+/* --- 1. GOOGLE FONTS DOWNLOAD LINK --- */
+/* Simple Explanation: This line automatically tells the browser to connect to 
+   the internet and load the typography styles (Open Sans, Playfair, Poppins, Lora) 
+   used for our luxury headings, menus, and paragraphs. */
+@import url("https://googleapis.com|Playfair+Display:400,700|Poppins:300,400,500,600,700|Lora:400,400i");
+
+/* --- 2. GRID MARGIN SPACING MODIFIER --- */
+/* Simple Explanation: This creates an exact empty spacing margin on the right side. 
+   In Bootstrap, the screen is split into 12 imaginary vertical columns. 1 divided by 12 
+   is exactly 8.33333333%. This class pushes an item leftward by exactly one column 
+   to create balanced breathing room between our sections. */
+.col-md-offset-right-1, .col-lg-offset-right-1 {
+  margin-right: 8.33333333%; 
+}

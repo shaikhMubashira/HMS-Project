@@ -1,0 +1,64 @@
+body, input, button, label, a {
+            font-family: 'sans-serif';
+        }
+
+        .img1 {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .img1:hover {
+            transform: scale(1.1);
+        }
+        
+        h1 {            
+            margin-bottom: 10px;
+            font-weight: bold; 
+            color: #ffffff;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px; 
+            margin-bottom: 20px;
+        }
+
+        .glass-card {
+            background-color: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        body .form-control {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            border-radius: 8px;
+        }
+
+        body .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: #d4af37;
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+            color: #ffffff;
+        }
+
+        body .form-floating label {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .custom-login-btn {
+            background-color: #d4af37;
+            color: #111111;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            transition: 0.2s;
+        }
+        .custom-login-btn:hover {
+            background-color: #f3d368;
+            color: #111111;
+        }
