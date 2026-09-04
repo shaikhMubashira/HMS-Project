@@ -28,9 +28,11 @@
     <header class="header_area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <!-- Text branding updated for MTF INN -->
-                <a class="navbar-brand logo_h" href="index.php" style="font-weight: bold; color: #0a182f; font-size: 24px; text-decoration: none;">MTF INN</a>
-                
+                <!-- Image branding for MTF INN -->
+                <a class="navbar-brand logo_h" href="index.php">
+                    <img src="image/logo1.png" alt="MTF INN Logo" style="height: 75px; width: 150px; max-height: 100%;">
+                </a>
+                    
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
