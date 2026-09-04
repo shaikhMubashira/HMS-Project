@@ -36,11 +36,39 @@ $session_username = isset($_SESSION['username']) ? $_SESSION['username'] : "Gues
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style>
         body {
-            background: linear-gradient(rgba(10, 24, 47, 0.7), rgba(10, 24, 47, 0.8)), url('./image/login/hotel-bg.png') no-repeat center center fixed;
+            background: linear-gradient(rgba(10, 24, 47, 0.75), rgba(10, 24, 47, 0.85)), url('./image/login/hotel-bg.png') no-repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
             color: #fff;
             padding-bottom: 100px;
+        }
+
+        /* 1. This makes the text you type inside the search bar clear white */
+        #search {
+            color: #ffffff ;
+        }
+
+        /* 2. This makes the placeholder text ("Search by room type...") a highly visible soft light grey */
+        #search::placeholder {
+            color: rgba(255, 255, 255, 0.65) ;
+            opacity: 1; 
+        }
+
+        /* Sleek background wrapper styling for our input interface box */
+        .search-glass-container {
+            background: rgba(236, 226, 226, 0.08); 
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 50px;
+            padding: 8px 16px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .search-glass-container:focus-within {
+            border-color: #d4af37;
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.25);
         }
 
         .floor-heading {
@@ -105,33 +133,36 @@ $session_username = isset($_SESSION['username']) ? $_SESSION['username'] : "Gues
 <body>
 
     <!-- Header Navigation Section -->
-    <div class="container py-3">
-        <div class="d-flex justify-content-between align-items-center">
-            <a href="index.php"
-                style="font-weight: bold; color: #fff; font-size: 24px; text-decoration: none; letter-spacing: 1px;">REST
-                INN</a>
+    <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <!-- 2. Branding text updated to MTF INN here -->
+            <a href="index.php" style="font-weight: bold; color: #fff; font-size: 24px; text-decoration: none; letter-spacing: 1px;">MTF INN</a>
             <div class="d-flex align-items-center">
-                <span class="text-white-50 me-3 d-none d-sm-inline">Welcome,
-                    <strong><?php echo htmlspecialchars($session_username); ?></strong></span>
-                <a href="index.php" class="btn btn-sm btn-outline-light px-3 fw-bold"
-                    style="border-radius: 20px; font-size: 13px; letter-spacing: 0.5px;">Back to Home</a>
+                <span class="text-white-50 me-3 d-none d-sm-inline">Welcome, <strong><?php echo htmlspecialchars($session_username); ?></strong></span>
+                <a href="index.php" class="btn btn-sm btn-outline-light px-3 fw-bold" style="border-radius: 20px; font-size: 13px; letter-spacing: 0.5px;">Back to Home</a>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center mb-4">
-        <div class="p-3 rounded-3 text-center"
-            style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
-            <input type="text" placeholder="Search" class="form-control text-center" id="search">
+
+        <!-- Title Block -->
+        <div class="text-center mb-4">
+            <h1 style="color: #d4af37; font-weight: 800; font-size: 36px; letter-spacing: 0.5px;">Hotel Room Map Layout</h1>
+            <p class="text-white-50 small" style="font-size: 15px;">Browse available accommodations arranged by their real physical floors</p>
         </div>
-    </div>
+
+        <!-- 3. NEW SEARCH BAR DESIGN LAYER: Constrained inside row/col layout boundaries -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="search-glass-container d-flex align-items-center">
+                    <i class="fa fa-search ms-2 me-3" style="color: rgba(255, 255, 255, 0.5); font-size: 16px;"></i>
+                    <input type="text" placeholder="Search by room type, floor, or status..." class="form-control" id="search" 
+                           style="background: transparent; border: none; color: #fff; box-shadow: none; padding-left: 0; font-size: 15px;">
+                </div>
+            </div>
+        </div>
+
 
     <!-- MAIN HOTEL CONTAINER BUILD -->
     <div class="container my-3">
-        <div class="text-center mb-4">
-            <h1 style="color: #d4af37; font-weight: 800;">Hotel Room Map Layout</h1>
-            <p class="text-white-50 small">Browse available accommodations arranged by their real physical floors</p>
-        </div>
-
         <form method="POST" action="roombookingconfirm.php">
             <div class="row g-3 justify-content-center mb-4">
                 <div class="col-md-4 col-sm-6">
