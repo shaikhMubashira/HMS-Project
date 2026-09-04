@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update_profile'])) {
     $new_password = $_POST['password'] ?? '';
     $confirm_password = $_POST['cpassword'] ?? '';
 
-    $profile_pic_path = "";
+    $profile_pic_path = ""??'./image/user.png';
     $errors = array();
 
     // 1. Profile Picture Upload Check

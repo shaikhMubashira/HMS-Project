@@ -26,48 +26,55 @@ $total_rooms = $conn->query("SELECT COUNT(*) as count FROM rooms")->fetch_assoc(
                     <li class="nav-item mb-2"><a href="dashboard.php?page=rooms" class="nav-link text-white">Manage Rooms</a></li>
                     <li class="nav-item mb-2"><a href="dashboard.php?page=bookings" class="nav-link text-white">Bookings</a></li>
                     <li class="nav-item mb-2"><a href="dashboard.php?page=guests" class="nav-link text-white">Guests</a></li>
+                    <li class="nav-item mb-2"><a href="dashboard.php?page=bill" class="nav-link text-white">Invoice</a></li>
                 </ul>
             </nav>
 
             <!-- Main Dynamic Content Area -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
-                <?php
-                if ($page == 'overview') {
-                    echo "<h2>Dashboard Overview</h2>";
-                    echo '<div class="row mt-4">
-                            <div class="col-md-4">
-                                <div class="card text-white bg-primary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Total Bookings</h5>
-                                        <p class="card-text fs-4">' . $total_bookings . '</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card text-white bg-success mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Active Guests</h5>
-                                        <p class="card-text fs-4">' . $active_guests . '</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card text-white bg-warning mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Total Rooms</h5>
-                                        <p class="card-text fs-4">' . $total_rooms . '</p>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>';
-                } elseif ($page == 'rooms') {
-                    include 'rooms_content.php';
-                } elseif ($page == 'bookings') {
-                    include 'bookings_content.php';
-                } elseif ($page == 'guests') {
-                    include 'guests_content.php';
-                }
-                ?>
+               <?php
+if ($page == 'overview') {
+    // Total bookings count fetch karne ki query
+    $booking_count_query = $conn->query("SELECT COUNT(*) as total FROM client.booking");
+    $total_bookings_count = ($booking_count_query) ? $booking_count_query->fetch_assoc()['total'] : 0;
+
+    echo "<h2>Dashboard Overview</h2>";
+    echo '<div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Bookings</h5>
+                        <p class="card-text fs-4">' . $total_bookings_count . '</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Active Guests</h5>
+                        <p class="card-text fs-4">' . $active_guests . '</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Rooms</h5>
+                        <p class="card-text fs-4">' . $total_rooms . '</p>
+                    </div>
+                </div>
+            </div>
+          </div>';
+} elseif ($page == 'rooms') {
+    include 'rooms_content.php';
+} elseif ($page == 'bookings') {
+    include 'bookings_content.php';
+} elseif ($page == 'guests') {
+    include 'guests_content.php';
+} elseif ($page == 'bill') {
+    include 'bill.php';
+}
+?>
             </main>
         </div>
     </div>

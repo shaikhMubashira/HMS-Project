@@ -3,8 +3,8 @@ $con = @mysqli_connect("localhost", "root", "", "client");
 $result = $con ? $con->query("SELECT id, username, room_name, check_in,check_out, num_nights, total_amount FROM booking ORDER BY id DESC") : null;
 ?>
 <h2>Bookings List</h2>
-<table class="table table-bordered mt-3">
-    <thead>
+<table class="table table-striped table-hover align-middle mt-3">
+    <thead class="table-dark">
         <tr>
             <th>ID</th>
             <th>Guest Username</th>
@@ -28,7 +28,6 @@ $result = $con ? $con->query("SELECT id, username, room_name, check_in,check_out
             <td><?php echo $row['num_nights']; ?></td>
             <td>₹<?php echo number_format($row['total_amount']); ?></td>
             <td>
-                <a href="edit_booking.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-primary">Edit</a>
                 <a href="delete_booking.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?');">Delete</a>
             </td>
         </tr>
