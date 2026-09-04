@@ -32,7 +32,7 @@
                 <a class="navbar-brand logo_h" href="index.php">
                     <img src="image/logo1.png" alt="MTF INN Logo" style="height: 75px; width: 150px; max-height: 100%;">
                 </a>
-                    
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -77,94 +77,105 @@
     <!--================Breadcrumb Area =================-->
 
     <!--================Contact Area =================-->
-<section class="contact_area section_gap">
-    <div class="container">
-        
-        <!-- India Location Maps Frame -->
-        <iframe
-            src="https://maps.google.com/"
-            width="1110" height="450" style="border:0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" allowfullscreen="" loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        
-        <div class="row mt-5">
-        <!--================ Contact Grid Layout =================-->
-        <section class="pinterest-style-wrapper" style="background: #f8fafc; padding: 70px 0; width: 100% !important; max-width: 100% !important; display: block; clear: both;">
-            <!-- Wide Fluid container breaks out of your old layout grid limits -->
-            <div class="container-fluid" style="width: 90% !important; max-width: 1200px !important; margin: 0 auto !important; padding: 0 !important;">
-                
-                <!-- Top Minimalist Text Headers -->
-                <div class="text-center" style="margin-bottom: 45px !important; width: 100% !important; display: block;">
-                    <h2 style="color: #0a182f; font-weight: 800; font-size: 32px !important; margin-bottom: 12px !important; letter-spacing: 0.5px;">Need help with your online booking?</h2>
-                    <p class="text-muted" style="font-size: 16px !important; max-width: 650px; margin: 0 auto !important; line-height: 1.6;">Have a question or need more information? Just drop us a line and our desk team will reply shortly.</p>
-                </div>
+    <section class="contact_area section_gap">
+        <div class="container">
+            
+            <!-- India Location Maps Frame -->
+            <!-- Functional, Clean Mumbai, India Location Maps Frame -->
+            <!-- Functional, Clean Location Maps Frame using text query -->
+            <!-- Functional, Clean Location Maps Frame -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491713.50350883417!2d73.10053068906248!3d15.670967400000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeefa3ea65a85%3A0x1ece1eb7bedaffe8!2sRiva%20Beach%20Resort!5e0!3m2!1sen!2sin!4v1788547314599!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style="border:0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
 
-                <!-- Master Split Card Container Grid Wrapper -->
-                <div class="row g-0 rounded-4 overflow-hidden shadow-lg mx-0" style="background: #ffffff; border-radius: 16px !important; box-shadow: 0 15px 40px rgba(0,0,0,0.1) !important; display: flex !important; flex-wrap: wrap !important; width: 100% !important;">
+
+
+        
+            <div class="row mt-5">
+            <!--================ Contact Grid Layout =================-->
+            <section class="pinterest-style-wrapper" style="background: #f8fafc; padding: 70px 0; width: 100% !important; max-width: 100% !important; display: block; clear: both;">
+                <!-- Wide Fluid container breaks out of your old layout grid limits -->
+                <div class="container-fluid" style="width: 90% !important; max-width: 1200px !important; margin: 0 auto !important; padding: 0 !important;">
                     
-                    <!-- LEFT HALF: Minimalist User Input Form Fields (7/12 Parts of Screen Width) -->
-                    <div class="col-12 col-md-7 p-4 p-md-5" style="background: #ffffff; padding: 45px !important; flex: 0 0 58.333333%; max-width: 58.333333%;">
-                        <h4 class="fw-bold" style="color: #0a182f; font-size: 20px !important; font-weight: 700 !important; margin-bottom: 30px !important; letter-spacing: 0.5px;">Fill up the form if you have any questions</h4>
-                        
-                        <form class="contact_form" action="" method="post" id="contactForm" style="width: 100% !important;">
-                            <div class="form-group" style="margin-bottom: 20px !important;">
-                                <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Your Name*</label>
-                                <input type="text" class="form-control px-3" id="name" name="name" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; height: 48px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important;">
-                            </div>
-                            <div class="form-group" style="margin-bottom: 20px !important;">
-                                <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Your Mail*</label>
-                                <input type="email" class="form-control px-3" id="email" name="email" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; height: 48px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important;">
-                            </div>
-                            <div class="form-group" style="margin-bottom: 20px !important;">
-                                <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Your Subject*</label>
-                                <input type="text" class="form-control px-3" id="subject" name="subject" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; height: 48px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important;">
-                            </div>
-                            <div class="form-group" style="margin-bottom: 25px !important;">
-                                <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Write Message*</label>
-                                <textarea class="form-control p-3" name="message" id="message" rows="5" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important; resize: none; height: 120px !important; line-height: 1.5;"></textarea>
-                            </div>
-                            
-                            <button type="submit" name="submit_msg" class="btn btn-dark fw-bold text-uppercase px-4 shadow-sm" style="background-color: #0a182f !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; height: 50px !important; font-size: 14px !important; letter-spacing: 1px !important; padding: 0 30px !important;">
-                                Send a Message
-                            </button>
-                        </form>
+                    <!-- Top Minimalist Text Headers -->
+                    <div class="text-center" style="margin-bottom: 45px !important; width: 100% !important; display: block;">
+                        <h2 style="color: #0a182f; font-weight: 800; font-size: 32px !important; margin-bottom: 12px !important; letter-spacing: 0.5px;">Need help with your online booking?</h2>
+                        <p class="text-muted" style="font-size: 16px !important; max-width: 650px; margin: 0 auto !important; line-height: 1.6;">Have a question or need more information? Just drop us a line and our desk team will reply shortly.</p>
                     </div>
 
-                    <!-- RIGHT HALF: Solid Dark Blue Information Box Block (5/12 Parts of Screen Width) -->
-                    <div class="col-12 col-md-5 p-4 p-md-5 d-flex flex-column justify-content-center text-center text-md-start" style="background: #0a182f !important; color: #ffffff !important; padding: 45px !important; flex: 0 0 41.666667%; max-width: 41.666667%;">
+                    <!-- Master Split Card Container Grid Wrapper -->
+                    <div class="row g-0 rounded-4 overflow-hidden shadow-lg mx-0" style="background: #ffffff; border-radius: 16px !important; box-shadow: 0 15px 40px rgba(0,0,0,0.1) !important; display: flex !important; flex-wrap: wrap !important; width: 100% !important;">
                         
-                        <!-- Location Info Group -->
-                        <div style="margin-bottom: 35px !important; text-align: left !important;">
-                            <h6 style="color: #d4af37 !important; font-weight: 800 !important; font-size: 13px !important; letter-spacing: 2px !important; text-transform: uppercase; margin-bottom: 10px !important;">Location</h6>
-                            <p style="color: rgba(255,255,255,0.85) !important; font-size: 15px !important; line-height: 1.6; margin: 0 !important;">
-                                123 Luxury Road, Worli,<br>
-                                Mumbai, Maharashtra<br>
-                                400018, India
-                            </p>
+                        <!-- LEFT HALF: Minimalist User Input Form Fields (7/12 Parts of Screen Width) -->
+                        <div class="col-12 col-md-7 p-4 p-md-5" style="background: #ffffff; padding: 45px !important; flex: 0 0 58.333333%; max-width: 58.333333%;">
+                            <h4 class="fw-bold" style="color: #0a182f; font-size: 20px !important; font-weight: 700 !important; margin-bottom: 30px !important; letter-spacing: 0.5px;">Fill up the form if you have any questions</h4>
+                            
+                            <form class="contact_form" action="" method="post" id="contactForm" style="width: 100% !important;">
+                                <div class="form-group" style="margin-bottom: 20px !important;">
+                                    <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Your Name*</label>
+                                    <input type="text" class="form-control px-3" id="name" name="name" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; height: 48px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 20px !important;">
+                                    <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Your Mail*</label>
+                                    <input type="email" class="form-control px-3" id="email" name="email" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; height: 48px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 20px !important;">
+                                    <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Your Subject*</label>
+                                    <input type="text" class="form-control px-3" id="subject" name="subject" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; height: 48px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 25px !important;">
+                                    <label class="small text-muted fw-bold" style="font-size: 13px !important; display: block; margin-bottom: 6px !important; color: #4a5568 !important;">Write Message*</label>
+                                    <textarea class="form-control p-3" name="message" id="message" rows="5" required style="border: 1px solid #cbd5e0 !important; border-radius: 6px !important; background: #fafafa !important; font-size: 14px !important; width: 100% !important; color: #2d3748 !important; resize: none; height: 120px !important; line-height: 1.5;"></textarea>
+                                </div>
+                                
+                                <button type="submit" name="submit_msg" class="btn btn-dark fw-bold text-uppercase px-4 shadow-sm" style="background-color: #0a182f !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; height: 50px !important; font-size: 14px !important; letter-spacing: 1px !important; padding: 0 30px !important;">
+                                    Send a Message
+                                </button>
+                            </form>
                         </div>
 
-                        <!-- Contact Info Group -->
-                        <div style="margin-bottom: 35px !important; text-align: left !important;">
-                            <h6 style="color: #d4af37 !important; font-weight: 800 !important; font-size: 13px !important; letter-spacing: 2px !important; text-transform: uppercase; margin-bottom: 10px !important;">Contact</h6>
-                            <p style="color: rgba(255,255,255,0.85) !important; font-size: 15px !important; margin: 0 !important; line-height: 1.6;">
-                                +91 98765 43210<br>
-                                <a href="mailto:support@mtfinn.com" style="color: rgba(255,255,255,0.85) !important; text-decoration: none !important;">support@mtfinn.com</a>
-                            </p>
-                        </div>
+                        <!-- RIGHT HALF: Solid Dark Blue Information Box Block (5/12 Parts of Screen Width) -->
+                        <div class="col-12 col-md-5 p-4 p-md-5 d-flex flex-column justify-content-center text-center text-md-start" style="background: #0a182f !important; color: #ffffff !important; padding: 45px !important; flex: 0 0 41.666667%; max-width: 41.666667%;">
+                            
+                            <!-- Location Info Group -->
+                            <div style="margin-bottom: 35px !important; text-align: left !important;">
+                                <h6 style="color: #d4af37 !important; font-weight: 800 !important; font-size: 13px !important; letter-spacing: 2px !important; text-transform: uppercase; margin-bottom: 10px !important;">Location</h6>
+                                <p style="color: rgba(255,255,255,0.85) !important; font-size: 15px !important; line-height: 1.6; margin: 0 !important;">
+                                    123 Luxury Road, Worli,<br>
+                                    Mumbai, Maharashtra<br>
+                                    400018, India
+                                </p>
+                            </div>
 
-                        <!-- Social Links Info Group -->
-                        <div style="text-align: left !important;">
-                            <h6 style="color: #d4af37 !important; font-weight: 800 !important; font-size: 13px !important; letter-spacing: 2px !important; text-transform: uppercase; margin-bottom: 15px !important;">Social</h6>
-                            <div style="display: flex !important; gap: 20px !important;">
-                                <a href="#" style="color: rgba(255,255,255,0.6) !important; font-size: 18px !important; text-decoration: none !important;"><i class="fa fa-facebook"></i></a>
-                                <a href="#" style="color: rgba(255,255,255,0.6) !important; font-size: 18px !important; text-decoration: none !important;"><i class="fa fa-twitter"></i></a>
-                                <a href="#" style="color: rgba(255,255,255,0.6) !important; font-size: 18px !important; text-decoration: none !important;"><i class="fa fa-instagram"></i></a>
-                            </div><!-- Close left form column -->
-                        </div><!-- Close master card split grid row -->
-                    </div><!-- Close content inner container-fluid -->
-                </section><!-- Close pinterest style section wrapper -->
-            </div><!-- Close map/row grid inner container -->
-        </section><!-- Close contact_area wrapper section entirely -->
-    </div>
+                            <!-- Contact Info Group -->
+                            <div style="margin-bottom: 35px !important; text-align: left !important;">
+                                <h6 style="color: #d4af37 !important; font-weight: 800 !important; font-size: 13px !important; letter-spacing: 2px !important; text-transform: uppercase; margin-bottom: 10px !important;">Contact</h6>
+                                <p style="color: rgba(255,255,255,0.85) !important; font-size: 15px !important; margin: 0 !important; line-height: 1.6;">
+                                    +91 98765 43210<br>
+                                    <a href="mailto:support@mtfinn.com" style="color: rgba(255,255,255,0.85) !important; text-decoration: none !important;">support@mtfinn.com</a>
+                                </p>
+                            </div>
+
+                            <!-- Social Links Info Group -->
+                            <div style="text-align: left !important;">
+                                <h6 style="color: #d4af37 !important; font-weight: 800 !important; font-size: 13px !important; letter-spacing: 2px !important; text-transform: uppercase; margin-bottom: 15px !important;">Social</h6>
+                                <div style="display: flex !important; gap: 20px !important;">
+                                    <a href="#" style="color: rgba(255,255,255,0.6) !important; font-size: 18px !important; text-decoration: none !important;"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" style="color: rgba(255,255,255,0.6) !important; font-size: 18px !important; text-decoration: none !important;"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" style="color: rgba(255,255,255,0.6) !important; font-size: 18px !important; text-decoration: none !important;"><i class="fa fa-instagram"></i></a>
+                                </div><!-- Close left form column -->
+                            </div><!-- Close master card split grid row -->
+                        </div><!-- Close content inner container-fluid -->
+                    </section><!-- Close pinterest style section wrapper -->
+                </div><!-- Close map/row grid inner container -->
+            </section><!-- Close contact_area wrapper section entirely -->
+        </div>
     <!--================ Contact Area End =================-->
 
     <!--================ start footer Area  =================-->	
