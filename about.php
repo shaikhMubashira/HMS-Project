@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -34,18 +37,19 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li> 
+                        <li class="nav-item "><a class="nav-link" href="index.php">Home</a></li> 
                         <li class="nav-item active"><a class="nav-link" href="about.php">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="Roombooking.php">Room booking</a></li>
-                        
+                        <li class="nav-item"><a class="nav-link" href="MyBooking.php">My Booking</a></li>
                         <!-- DYNAMIC PROFILE LINK -->
                         <?php if (isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] === true): ?>
-                            <li class="nav-item"><a class="nav-link" href="profile.php" style="color: #d4af37; font-weight: bold;">My Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="profile.php">My Profile</a></li>
                         <?php else: ?>
-                            <li class="nav-item"><a class="nav-link" href="login.php" style="color: #d4af37; font-weight: bold;">Log In</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.php">Log In</a></li>
                         <?php endif; ?>
+                        <li class="nav-item"><a class="nav-link" href="login.php">LogOut</a></li>
                     </ul>
                 </div>
             </nav>
