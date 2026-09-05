@@ -195,9 +195,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['rooms'])) {
                         <h4 class="fw-bold mb-3" style="color: #0a182f; font-size:18px;">⏱ Stay Parameters</h4>
                         <div class="inner-summary-block mb-4">
                             <div class="detail-row"><strong>Check-In:</strong>
-                                <span><?php echo htmlspecialchars($check_in); ?></span></div>
+                                <span><?php echo htmlspecialchars($check_in); ?></span>
+                            </div>
                             <div class="detail-row"><strong>Check-Out:</strong>
-                                <span><?php echo htmlspecialchars($check_out); ?></span></div>
+                                <span><?php echo htmlspecialchars($check_out); ?></span>
+                            </div>
                             <div class="detail-row"><strong>Duration:</strong> <span><?php echo $num_nights; ?>
                                     Night(s)</span></div>
                             <div class="detail-row" style="border:none;"><strong>Payment:</strong> <span
