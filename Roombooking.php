@@ -154,7 +154,7 @@ $session_username = isset($_SESSION['username']) ? $_SESSION['username'] : "Gues
             <div class="col-12 col-md-8 col-lg-6">
                 <div class="search-glass-container d-flex align-items-center">
                     <i class="fa fa-search ms-2 me-3" style="color: rgba(255, 255, 255, 0.5); font-size: 16px;"></i>
-                    <input type="text" placeholder="Search by room type, floor, or status..." class="form-control" id="search" 
+                    <input type="text" placeholder="Search by room type" class="form-control" id="search" 
                            style="background: transparent; border: none; color: #fff; box-shadow: none; padding-left: 0; font-size: 15px;">
                 </div>
             </div>
