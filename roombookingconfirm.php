@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['rooms'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REST INN - Booking Summary Checkout</title>
+    <title>MTF INN - Booking Summary Checkout</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <style>
         body {
@@ -167,7 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['rooms'])) {
     <div class="container col-12 col-sm-11 col-md-11 col-lg-10 mt-2">
         <div class="wide-receipt-box">
             <div class="receipt-header">
-                <h1 style="color: #0a182f; font-weight: 800; margin: 0;">REST INN</h1>
+                <h1 style="color: #0a182f; font-weight: 800; margin: 0;">MTF INN</h1>
                 <div
                     style="font-size: 12px; text-transform: uppercase; color: #718096; font-weight: bold; margin-top: 5px;">
                     Review & Confirm Your Reservation</div>
